@@ -8,10 +8,64 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Hello, world!</title>
+    <title>Carousel Practice</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Martin_Luther_King%2C_Jr..jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Martin Luther King Jr</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.gstatic.com/tv/thumb/persons/71358/71358_v9_ba.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Malcom X</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Rosaparks.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Rosa Parks</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="data:image/jpeg;base64,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" alt="Fourth slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Jackie Robinson</h5>
+            <p></p>
+        </div>
+      </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://api.time.com/wp-content/uploads/2018/06/muhammad-ali-pardon.jpg" alt="Fifth slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Muhammad Ali</h5>
+            <p></p>
+        </div>
+      </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
